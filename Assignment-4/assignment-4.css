@@ -20,6 +20,7 @@ html {
     flex-direction: column;
     align-items: center;
     /* height: 100vh; */
+    background-color: rgb(224, 225, 226);
 }
 
 
@@ -34,7 +35,7 @@ body {
 .content {
     max-width: var(--containerwidth);
     min-height: var(--containerheight);
-    border: 1px solid red;
+    background: rgb(243, 242, 242);
     gap: 1rem;
     margin-block-start: 6rem;
     
@@ -50,7 +51,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    
+
     
     
 }
@@ -59,8 +61,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem 2rem;
-    background-color: brown;
-
 }
 
 
@@ -87,7 +87,21 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px 30px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    left: 720px;
+    padding-bottom: 50px;
+}
+
+.content .container .right-section form{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    height: 100%;
+    padding-bottom: 40px;
+    box-shadow: 0px 4px 50px 0px hsla(222, 68%, 4%, 0.1);
+    background: white;
+
 }
 
 .content .container .right-section form .user-details{
@@ -106,7 +120,7 @@ form .user-details .input-box{
 }
 
 .user-details .input-box input{
-    height: 30px;
+    /*  */
     width: 90%;
     outline: none;
     border-radius: 3px;
@@ -121,26 +135,26 @@ form .user-details .input-box{
     border-color: rgb(11, 124, 124);
 }
 
-form .Activity-box{
-    margin: 20px 0 12px 0;
-    width: calc(100% - 20px);
-}
-
-form .Activity-box .activity{
-    font-size: 14px;
-    font-weight: 500;
-    display: block;
-    flex-wrap: wrap;
-}
-
-form .Activity-box .activity input{
+.content .container .right-section form .activity-box, .content .container .right-section form .Password{
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    height: 30px;
+    flex-direction: column;
+    gap: .2rem;
+    flex: 1;
+    margin: 20px 0 12px 0;
 }
 
-form .Password .password{
+.content .container .right-section form .activity-box input, .content .container .right-section form .Password input{
+    width: 80%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form .Password, form .activity-box{
     display: block;
     flex-wrap: wrap;
     font-size: 14px;
@@ -161,18 +175,28 @@ form .submit{
 
 form .submit button{
     height: 100%;
-    width: 80%;
+    width: 500px;
     margin: 5px 0;
     justify-content: center;
     align-items: center;
     outline: none;
     color: rgb(247, 252, 252);
-    background-color: aquamarine;
+    background-color: hsla(174, 62%, 47%, 1);
     font-size: 14px;
     font-weight: 500;
     border-radius: 5px;
 }
 
+form .submit p{
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+form .submit span a{
+    color: hsla(174, 62%, 47%, 1);
+    
+}
 
 
 
