@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    box-sizing: content-box;
+}
+.task-3{
+    
+     background-color: #aba2c9;
+     margin: 100px auto;
+     position: center;
+     border: 15px solid white;
+     padding: 180px;
+     padding-right: 300px;
+     /* margin: 150px 450px; */
+     max-width: 400px;
+     min-width: 100px;
+     width: 350px;
+     height: 180px;
+     max-height: 300px;
+     min-height: 100px;
+    }
+
+.icon{
+    max-width: 200px;
+    background-color: rgb(248, 246, 163);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -125px;
+    margin-left: -10px;
+    font-family: 'Times New Roman', Times, serif;
+
+    
+    }
+.watch img{
+    width: 450px;
+    height: 250px;
+    margin-top: -30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: -2px;
+}
+.content{
+    width: 450px;
+    height: 170px;
+    margin-top: -30px;
+    background-color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-left: -2px;
+    text-align: left;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+h2{
+    padding: 12px;
+    font-weight: Bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+span{
+    color: #777;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif
+    }
+ p{
+     font-size: 16px;
+     font-weight: 499;
+     line-height: 1.4em;
+     margin-top: -18px;
+     
+ }

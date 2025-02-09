@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --containerwidth: 1440px;
+    --contentwidth: 892px;
+    --freelancewidth: 312px;
+    --navcolour: #1d2c3c;
+    --inputBGcolor:#edeff2;
+    --freelanceBGColor:hsla(204, 84%, 41%, 1);
+    --inputcolor: #646e7a;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+.project{
+    max-width: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    margin-bottom: 70px;
+
+} 
+
+.container{
+    width: var(--containerwidth);
+    gap: 6rem;   
+    justify-content: center;
+    /*edit here 2*/
+    margin-inline: 200px;
+    align-items: center; 
+
+    }
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.nav-bar nav ul li{
+    display: inline;
+    margin-inline: 10px;
+    text-align: center;
+}
+
+.nav-bar nav ul li a:link,
+.nav-bar nav ul li a:visited{
+    text-decoration: none;
+    color: var(--navcolour);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.nav-bar nav ul li a:hover{
+    color: var(--freelanceBGColor)
+}
+
+.nav-bar nav ul li:last-child{
+    border: 1.5px solid var(--navcolour);
+    padding: 0.4rem .8rem;
+    border-radius: 8px;
+}
+
+.content{
+    /*width is 892px*/
+    width: var(--contentwidth);
+    box-shadow: 2px 2px 5px var(--inputBGcolor);
+    display: grid;
+    margin-block: 70px;
+    /*edit here 2*/
+    margin-inline: 90px;
+    grid-template-columns: 1fr var(--freelancewidth);
+    /* height: 700px; */
+}
+
+.content .left-section{
+     /*width is 580px*/
+     display: flex;
+     flex-direction: column;
+     /* gap: 4rem; */
+     /* padding: 2.5rem; */
+
+}
+
+.content .left-section > div{
+    padding: 3rem 2.5rem;
+    border-bottom: 1px solid rgb(232, 230, 230);
+}
+
+.content .left-section .checkout h3{
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--navcolour);
+
+}
+
+.content .left-section .personal, .content .left-section .payment{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.content .left-section .personal h4, .content .left-section .payment h4{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.08rem;
+}
+
+.content .left-section .personal h4 span, .content .left-section .payment h4 span, .content .left-section .buy-button div i{
+   color: var(--freelanceBGColor);
+   border: 1px solid var(--freelanceBGColor);
+   text-align: center;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: .9rem;
+}
+
+.content .left-section .personal form, .content .left-section .payment form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content .left-section form .bio, .personal{
+   display: flex;
+   gap: 2rem;
+}
+
+.content .left-section form .bio div, .content .left-section form .email, .content .left-section .payment form{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    flex: 1; 
+    width: 100%;
+ } 
+
+.content .left-section form .bio div label, .content .left-section form .email label{
+    color: var(--navcolour);
+    font-size: .9rem;
+ } 
+ 
+ .content .left-section form .bio div input, .content .left-section form .email input, .content .left-section .payment form div input{
+    padding: .6rem .8rem;
+    border: none;
+    background-color: var(--inputBGcolor);
+    border-radius: 4px;
+ } 
+
+ .content .left-section form .email input{
+    width: 75%;
+ }
+
+ .content .left-section form .bio div input:focus, .content .left-section form .email input:focus{
+   outline: 2px solid var(--freelanceBGColor)
+ } 
+
+
+ .content .left-section form .bio div input::placeholder, .content .left-section form .email input::placeholder{
+    font-size: .8rem;
+    color: var(--inputcolor);
+  } 
+
+.content .left-section .payment form div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 60px;
+  }
+
+.content .left-section .payment form div input{
+    border-radius: 0;
+    outline: none;
+  }
+
+.content .left-section .buy-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.content .left-section .buy-button a{
+    background-color: #038e70;
+    padding-block: .6rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.content .left-section .buy-button div{
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content .left-section .buy-button button{
+    width: 25%;
+    margin: auto;
+    padding: .4rem .2rem;
+    border-radius: 6px;
+    background-color: #9fa4a9; 
+    border: none;
+    color: #f8f6f6;
+    font-size: .7rem;
+}
+
+.content .left-section .buy-button button span{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+
+.content .left-section .buy-button div i{
+    font-size: .8rem;
+}
+
+.content .left-section .buy-button div p{
+    font-size: .8rem;
+}
+
+.content .left-section .buy-button div p span{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+.content .right-section{
+    /*width is 312px*/
+    background-color: var(--freelanceBGColor);
+    color: #ffffff;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+} 
+
+
+.content .right-section .pricing div{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -26px;
+
+} 
+
+.content .right-section .pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+  } 
+   
+
+.content .right-section .pricing div p{
+  font-size: 4rem;
+  margin-inline: 14px;
+ 
+} 
+
+.content .right-section .pricing div span{
+    font-size: 1rem;
+    position: absolute;
+  } 
+
+.content .right-section .pricing div span:last-child{
+    bottom: 18%;
+    left: 35%
+  } 
+
+  .content .right-section .pricing div span:first-child{
+    top: 25%;
+    margin-inline: none;
+  } 
+
+  .content .right-section .pricing > p{
+    font-size: .9rem;
+    max-width: 60%;
+    font-weight: 400;
+    line-height: 1.5;
+    
+  } 
+
+  .content .right-section .services, .content .right-section .clients{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-block: .3rem;
+
+  } 
+
+  .content .right-section .services div{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    font-size: 1rem;
+  }
+
+  .content .right-section .clients{
+    font-size: .9rem;
+  }
+
+  .content .right-section .clients a:link, .content .right-section .clients a:visited{
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .content .right-section .divider{
+    height: 1px;
+    background-color: #599bd0;
+    margin-block: 20px;
+  }
+
+  .content .right-section .testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .content .right-section .testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .content .right-section .testimonial p{
+    max-width: 90%;
+    line-height: 1.5;
+    justify-items: center;
+  }
+
+  .content .right-section .testimonial p span{
+   font-weight: bold;
+  }
+
+  .content .right-section .testimonial .image{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .content .right-section .testimonial .image h3{
+    font-size: .9rem;
+  }
+
+
+.content .right-section img{
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   object-fit: cover;
+} 

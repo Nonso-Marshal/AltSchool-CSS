@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+.root{
+    --containerwidth: 1440px;
+    --containerheight: 840px;
+    --RSwidth: 580px;
+    --LSwidth: 460px;
+    --containercolor: hsla(0, 0%, 100%, 1);
+    --inputcolor: hsla(0, 0%, 45%, 1);
+}
+
+html {
+    /* 1rem = 14px*/
+    font-size: 14px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: var(--containerwidth);
+    min-height: var(--containerheight);
+    border: 1px solid red;
+    gap: 1rem;
+    margin-block-start: 6rem;
+    
+}
+
+.container {
+    display: flex;
+}
+
+.content .container .left-section {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    
+    
+}
+.content .container .left-section .left-content {
+    width: 460px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: brown;
+
+}
+
+
+.content .container .left-section .left-content img {
+    width: 50px;
+    height: 50px;
+    justify-content: left;
+}
+
+.content .container .left-section .left-content p {
+    width: 80%;
+}
+
+.content .container .left-section h3{
+    font-size: 2.857rem;
+}
+
+
+.content .container .right-section {
+    max-width: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    border: 2px solid blue;
+}
+
+.content .container .right-section form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+form .user-details .input-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 - 40px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 30px;
+    width: 90%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus, .user-details .input-box input:valid{
+    border-color: rgb(11, 124, 124);
+}
+
+form .Activity-box{
+    margin: 20px 0 12px 0;
+    width: calc(100% - 20px);
+}
+
+form .Activity-box .activity{
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    flex-wrap: wrap;
+}
+
+form .Activity-box .activity input{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 30px;
+}
+
+form .Password .password{
+    display: block;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 500;
+    
+    
+}
+
+form .Password .password input{
+    display: flex;
+    height: 30px;
+}
+form .submit{
+    height: 45px;
+    margin: 5px 0;
+
+}
+
+form .submit button{
+    height: 100%;
+    width: 80%;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: rgb(247, 252, 252);
+    background-color: aquamarine;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .content .container .right-section .right-content {
+    width: 580px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: rgb(226, 245, 252);
+    display: flex;
+    flex-direction: column;
+}
+
+.content .container .right-section .right-content form .form-content{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+form .form-content .column{
+    height: 95px;
+    width: calc(100% / 2 - 20px);
+    
+
+}
+
+ */
+
+/*.content .container .right-section .right-content form div {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    width: 100%;
+}
+
+
+
+.content .container .right-section .right-content form .column {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    gap: 2rem;
+    
+}
+
+.content .container .right-section .right-content form .column div {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    flex: 1;
+    width: 100%;
+} */
+
